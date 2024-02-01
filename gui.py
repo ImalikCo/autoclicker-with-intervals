@@ -6,11 +6,11 @@ from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, KeyCode
 
 if __name__ == '__main__':
-    layout = [[sg.Text("super coole autoclicker 100% no ban rate jamflex lol")],
-            [sg.Text('Schakelaar', size=(18, 1)), sg.InputText('[', key='-START_KEY-')],
+    layout = [[sg.Text("Autoclicker with Intervals")],
+            [sg.Text('Switch', size=(18, 1)), sg.InputText('[', key='-START_KEY-')],
             [sg.Text('Close Program Key', size=(18, 1)), sg.InputText(']', key='-END_KEY-')],
-            [sg.Text('Kliksnelheid (s)', size=(18, 1)), sg.InputText(key='-CLICK_SPEED-')],
-            [sg.Text('Intervallen tussen 0 en', size=(18, 1)), sg.InputText(key='-INTERVALS-')],
+            [sg.Text('Click speed (s)', size=(18, 1)), sg.InputText(key='-CLICK_SPEED-')],
+            [sg.Text('Range between 0 and', size=(18, 1)), sg.InputText(key='-INTERVALS-')],
             [sg.Button('Submit'), sg.Button('Cancel')]]
 
     window = sg.Window('Simple Data Entry Window', layout)
